@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test for array.cpp",
+      "setup": "",
+      "run": "./test_new_file.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

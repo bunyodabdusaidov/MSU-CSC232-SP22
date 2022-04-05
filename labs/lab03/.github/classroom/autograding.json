@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "LAB03 Action - Test Specification File",
+      "setup": "",
+      "run": "./test_header_exists.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "LAB03 Action - Test Implementation Exists",
+      "setup": "",
+      "run": "./test_source_exists.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "LAB03 - Run ctest",
+      "setup": "",
+      "run": "./run_ctest.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+1. What happens when you try to compile a statement with too many values in the initializer list?
+
+It throws an error stating that too many initializers are given:
+
+array.cpp: In function ‘int main()’:
+array.cpp:12:63: error: too many initializers for ‘intarr’ {aka ‘int [16]’}
+   12 |  intarr prime = {1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53};
+      | 
+
+2. Describe what happened after you changed the primes initializer list to contain fewer than 16 values.
+
+It didn't throw any error. But, the output was unexpected. I removed two initial elements from the array. The output had two zeros at the end of the array:
+
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+53
+0
+0
+
+3. Describe what happened after you executed your program with the changes stated in Step 7 below.
+
+Character array was displayed followed by ****, all on the same line: 
+
+rhinoceros****
+
+4. Describe what happened after you executed your program with the changes stated in Step 8 below.
+
+It throw an error stating that too many initializers were given:
+
+array.cpp: In function ‘int main()’:
+array.cpp:20:72: error: too many initializers for ‘charr’ {aka ‘char [10]’}
+   20 |  charr animal = {'a', 'r', 'h', 'i', 'n' , 'o', 'c', 'e', 'r', 'o', 's'};
+      |
+
+5. Describe what happened after you executed your program with the changes stated in Step 9 below.
+
+It simply displays the output:
+
+ceros****
+
+
+6. Based upon your work through Step 10, describe what value is used to initialize the uninitialized array elements.
+
+It displayed the ASCII codes of each element in the character array:
+
+114 104 105 110 111 99 101 114 111 115 
+
+7. Record what happened after you executed your program with the changes stated in Step 11 below.
+
+The string literal displayed the output as intended:
+
+elephant****
+
+8. Describe what happened after you executed your program with the changes stated in Step 12 below.
+
+It throws an error stating that the string is too long:
+
+array.cpp: In function ‘int main()’:
+array.cpp:17:17: error: initializer-string for array of chars is too long [-fpermissive]
+   17 |  charr animal = "rhinoceros";
+      |   
+
+
+9. List the result addresses below:
+
+   Address of first: 0x7ffcee3b5bb0
+   Address of  arr: 0x7ffcee3b5bf0
+   Address of last: 0x7ffcee3b5c30
+
+10. How many bytes of memory were allocated to each array?
+
+Integer is 4 bytes. Each array has 16 integers. 4 x 16 = 64. 64 bytes were allocated to each array.
+
+
+11. Using the information you have developed, complete these statements with the appropriate address:
+
+    Address of arr[2]: 0x7ffe98c48068
+    Address of arr[3]: 0x7ffe98c4806c
+
+12. Describe how your output changed in Step 14 (if it didn't, say that). What can you conclude about the value of an array variable?
+
+The output didn't change. Array variable is an andress of the first element in the array.
+
+13. Based on the output produced in Step 15, what can you conclude?
+
+Since arrays are consequtive elements, each integer in array differs to 4 bytes:
+
+0x7fff8293c750
+0x7fff8293c754
+0x7fff8293c758
+0x7fff8293c75c
+0x7fff8293c760
+0x7fff8293c764
+0x7fff8293c768
+0x7fff8293c76c
+0x7fff8293c770
+0x7fff8293c774
+0x7fff8293c778
+0x7fff8293c77c
+0x7fff8293c780
+0x7fff8293c784
+0x7fff8293c788
+
+0x7fff8293c750
+0x7fff8293c790
+0x7fff8293c7d0
+0x7fff8293c810
+0x7fff8293c850
+0x7fff8293c890
+0x7fff8293c8d0
+0x7fff8293c910
+0x7fff8293c950
+0x7fff8293c990
+0x7fff8293c9d0
+0x7fff8293ca10
+0x7fff8293ca50
+0x7fff8293ca90
+0x7fff8293cad0
+
+
+14. Based on the output produced in Step 16, what can you conclude?
+
+Adding a value to array variable does not change the values inside the array.
+
+15. In Step 16, what happens if you remove the parentheses in the expression *(arr + i)? Give an explanation below why you think this happens. (Hint: Check the priorites of operators * and +.)
+
+*(arr + 1) - inside parentheses, 1 is added to the address of arr, not its value. And * dereference operator goes to the address of the given variable and retrieves its value. When I removed parentheses in the expression *(arr + i), *arr + i - first arr variable is dereferenced and i added to its value, not to its address.
+
+16. Describe what happened after you executed your program with the changes stated in Step 18 below. What array elements changed?
+
+'first' and 'last' arrays were changed:
+
+first = { 0, 0, 0, 0, 0, 0, -999, 0, 0, 0, 0, 0, 0, 0, 0 }
+arr = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }
+last = { 2, 2, 2, 2, 999, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 }
+
+Since the elements of each array are stored consequtively, they can be accessed indirectly. In arr[-10], the index -10 will go 10 spaces back in the memory, and will access that element. Assuming, there wasn't `first` array before `arr` array, the memory would've accessed what was 10 spaces before `arr`
+
+
+17. Record the values of the expressions examined in Step 20 below:
+
+    *(mat + 0)        = 0x7ffeb5274e90
+    *(mat + 1)        = 0x7ffeb5274ea0
+    *(mat + 2)        = 0x7ffeb5274eb0
+
+    **(mat + 0)       = 11
+    **(mat + 1)       = 55
+    **(mat + 2)       = -1
+
+    *(*mat + 0)       = 11
+    *(*mat + 1)       = 22
+    *(*mat + 2)       = 33
+
+    *(*(mat + 1) + 0) = 55
+    *(*(mat + 1) + 0) = 66
+    *(*(mat + 1) + 0) = 77
+
+18. Rewrite the following expressions written in pointer-based notation using array-based notation.
+
+    *(mat + i)        <==> mat[0] 
+    **(mat + i)       <==> mat[i][0]
+    *(*mat + i)       <==> mat[0][i]
+    *(*(mat + i) + j) <==> mat[1][j]

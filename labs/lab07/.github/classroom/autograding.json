@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Task 1",
+      "setup": "chmod u+x ./task1.sh",
+      "run": "./task1.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Task 1",
+      "setup": "chmod u+x ./task1.sh",
+      "run": "./task1.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 2",
+      "setup": "chmod u+x ./task2.sh",
+      "run": "./task2.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 3",
+      "setup": "chmod u+x ./task3.sh",
+      "run": "./task3.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

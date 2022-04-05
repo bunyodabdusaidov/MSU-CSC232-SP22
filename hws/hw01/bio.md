@@ -1,0 +1,1 @@
+I知 Bunyod. I知 really excited about this class. Data structures course is specifically what I needed to practice since I知 planning to apply for internships next year. I知 not new to the programming world, I知 quite familiar with C and Python. I知 currently studying CS50x Introduction to Computer Science and Intellectual Enterprise.

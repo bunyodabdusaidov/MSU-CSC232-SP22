@@ -1,0 +1,9 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>150</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Thing&gt;&gt;
+csc232::IntPtrCell
+--
+-ptr_stored_value: *int
+--
++IntPtrCell(value = 0: int)
++read() const: int
++write(value: int): void
+bg=green</panel_attributes><additional_attributes></additional_attributes></element></diagram>

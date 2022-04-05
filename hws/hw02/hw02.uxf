@@ -1,0 +1,12 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>40</y><w>280</w><h>160</h></coordinates><panel_attributes>&lt;&lt;thing&gt;&gt;
+csc232::Point
+--
+-x: double
+-y: double
+--
++Point(initial_x = 0: double, initial_y = 0: double)
++shift(x_amount: double, y_amount: double): void
++rotate90(): void
++get_x() const: double
++get_y() const: double
+bg=green</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "HW02 Action - Added specification",
+      "setup": "",
+      "run": "./test_header_exists.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "HW02 Action - Added Implementation",
+      "setup": "",
+      "run": "./test_source_exists.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "HW02 Action - Run ctest",
+      "setup": "",
+      "run": "./run_ctest.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

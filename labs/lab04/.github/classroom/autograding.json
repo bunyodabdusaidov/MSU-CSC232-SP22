@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "TASK1: Creating Interfaces",
+      "setup": "",
+      "run": "./task1.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TASK2: Top-down Solution",
+      "setup": "",
+      "run": "./task2.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TASK3: Bottom-up solution",
+      "setup": "",
+      "run": "./task3.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run ctest",
+      "setup": "",
+      "run": "./run_ctest.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

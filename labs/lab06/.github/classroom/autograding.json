@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "GitHub Action: ctest",
+      "setup": "chmod u+x ./run_ctest.sh",
+      "run": "./run_ctest.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    }
+  ]
+}
